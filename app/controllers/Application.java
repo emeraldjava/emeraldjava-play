@@ -6,7 +6,8 @@ import play.mvc.Result;
 public class Application extends Controller {
   
     public static Result index() {
-        return ok("emeraldjava-play application.");
+    	return redirect(routes.Application.tasks());
+        //return ok("emeraldjava-play application.");
     }
     
 	public static Result tasks() {
